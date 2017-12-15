@@ -18,4 +18,4 @@ The offline step takes O(n) space, where n is the number of words in the text fi
 The online step takes O(1) space. We do not use additional storage. We just check if the user's word is in the anagrams dictionary. 
 
 # Other
-I decided to use two helper functions, one for the offline step and one for the online step, to improve readability and clarity of the code. 
+I decided to use two helper functions, one for the offline step and one for the online step, to improve readability and clarity of the code. With more time, I would do more error handling, such as validating the path in the command line (optional.) I would also research conventions for what to include the main function and what to include in the helper function. Specifically, I decided to read in parse command line arguments and read user input within my helper functions but this may not be standard practice. 
