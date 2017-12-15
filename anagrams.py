@@ -27,8 +27,10 @@ def make_dict():
     # dictionary.
     dictionary = {}
     for word in fileinput.input():
+        # Convert all letters to lowercase, remove newline character, and sort.
         word = word.rstrip('\n')
         anagram = ''.join(sorted(word.lower()))
+        # Add to dictionary.
         if anagram not in dictionary:
             dictionary[anagram] = [word]
         else:
@@ -43,7 +45,9 @@ def print_anagrams(anagram_dict):
         w = raw_input("Enter a word to see its anagrams: ")
         if w == '':
             sys.exit(1) #Abort
+        # Convert all letters to lowercase, remove newline character, and sort.
         anagram = ''.join(sorted(w.lower()))
+        # Check for key in dictionary and print anagrams. 
         if anagram in anagram_dict:
             output = ''
             for word in anagram_dict[anagram]:
