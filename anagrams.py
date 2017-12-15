@@ -1,8 +1,3 @@
-"""
-Laura Chen
-14 December 2017
-"""
-
 import os
 import sys
 import fileinput
